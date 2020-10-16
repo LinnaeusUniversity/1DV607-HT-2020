@@ -6,6 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Member.
+ */
 public class Member {
     private String name;
     private int id;
@@ -13,28 +16,56 @@ public class Member {
     private int boatIndex = 0;
     private List<Boat> boatArrayList = new ArrayList<>();
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets boat array list.
+     *
+     * @return the boat array list
+     */
     public List<Boat> getBoatArrayList() {
         return boatArrayList;
     }
 
+    /**
+     * Gets count boats.
+     *
+     * @return the count boats
+     */
     public int getCountBoats() {
         return boatArrayList.size();
     }
 
+    /**
+     * Update boat index.
+     */
     public void updateBoatIndex() {
         if (!boatArrayList.isEmpty()) {
             boatIndex = boatArrayList.get(boatArrayList.size() - 1).getId();
         }
     }
 
+    /**
+     * Add boat.
+     *
+     * @param boat the boat
+     */
     public void addBoat(Boat boat) {
         if (boat.getId() == 0) {
             boat.setId(++boatIndex);
@@ -42,10 +73,21 @@ public class Member {
         this.boatArrayList.add(boat);
     }
 
+    /**
+     * Delete boat.
+     *
+     * @param boat the boat
+     */
     public void deleteBoat(Boat boat) {
         this.boatArrayList.remove(boat);
     }
 
+    /**
+     * Gets boat by id.
+     *
+     * @param boatId the boat id
+     * @return the boat by id
+     */
     public Boat getBoatById(int boatId) {
         for (Boat boat : this.boatArrayList) {
             if (boat.getId() == boatId) {
@@ -55,19 +97,39 @@ public class Member {
         throw new RuntimeException("boat not found");
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         checkName(name);
         this.name = name;
     }
 
+    /**
+     * Gets personal number.
+     *
+     * @return the personal number
+     */
     public String getPersonalNumber() {
         return personalNumber;
     }
 
+    /**
+     * Sets personal number.
+     *
+     * @param personalNumber the personal number
+     */
     public void setPersonalNumber(String personalNumber) {
         checkPersonalNumber(personalNumber);
         this.personalNumber = personalNumber;

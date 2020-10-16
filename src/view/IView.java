@@ -6,6 +6,9 @@ import model.MenuOption;
 
 import java.util.List;
 
+/**
+ * The interface View.
+ */
 public interface IView {
     MenuOption readOption();
 

@@ -14,13 +14,14 @@
 10. Run
 11. The project should run
 -----------------------------------------------------
-### How to run jar files
+### How to run jar file
 #### windows machine
 1. unzip the jar file
 2. open program
 3. It should run
 
 alt:
+
     1.Unzip the jar file
     2. open cmd 
     3.Change the directory to where the jar is located
@@ -45,7 +46,7 @@ End of Instruction
 1. Class diagram
 2. Input Retrieve a member Sequence diagram
 3. Output Delete a member Sequence diagram 
-4. ReadME Updated
+4. ReadME
 5. Jar file
 6. Source code
 
@@ -57,10 +58,7 @@ End of Instruction
     2. Sequence diagram
     3. Sequence diagram
     4. ReadME
-    5. runnable jar file
-    6. comments in source code
-    7. Verbose list and compact list
-        1. Printed only one member
+   
 
 ### Improvements in source code `MVC`
 
@@ -79,20 +77,6 @@ End of Instruction
 
 1. controller
     1. Controller
-
-#### Improvements in every classes based on Review Form
-
-1. Indentation and formatting of blocks fixed
-2. Naming of classes/operations/attributes and arguments are consequent clear
-3. The code is structured better
-4. Comments are added
-5. Layouts are fixed
-6. Strict model-view separation improved
-7. Classes are structured having high cohesion
-8. Classes are now having low coupling
-9. Verbose list prints as the requirements on course press now
-10. Compact list prints as the requirements on course press now
-11. Classes and methods are  renamed shorter
 
 
 End of document

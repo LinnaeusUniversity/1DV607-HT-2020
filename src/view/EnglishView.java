@@ -9,6 +9,9 @@ import model.MenuOption;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * The type English view.
+ */
 public class EnglishView implements IView {
     private Scanner scanner = new Scanner(System.in);
 
@@ -221,21 +224,33 @@ public class EnglishView implements IView {
         }
     }
 
+    /**
+     * Boat added successfully.
+     */
     public void boatAddedSuccessfully() {
         System.out.println("Boat added successfully");
     }
 
+    /**
+     * Member added successfully.
+     */
     public void memberAddedSuccessfully() {
         System.out.println("Member Added successfully");
 
     }
 
 
+    /**
+     * Member edited successfully.
+     */
     public void memberEditedSuccessfully() {
         System.out.println("Member edited successfully");
 
     }
 
+    /**
+     * Boat edited successfully.
+     */
     public void boatEditedSuccessfully() {
         System.out.println("boat edited successfully ");
 

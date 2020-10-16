@@ -8,9 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * The type Storage.
+ */
 public class Storage {
     private File memberDataBase = new File("MemberDataBASE.txt");
 
+    /**
+     * Load registry list.
+     *
+     * @return the list
+     */
     public List<Member> loadRegistry() {
         List<Member> memberArrayListData = new ArrayList<>();
         try (Scanner scanner = new Scanner(memberDataBase)) {
@@ -29,6 +37,11 @@ public class Storage {
         return memberArrayListData;
     }
 
+    /**
+     * Write data in file.
+     *
+     * @param memberArrayList the member array list
+     */
     public void writeDataInFile(List<Member> memberArrayList) {
         try (PrintWriter printWriter = new PrintWriter(memberDataBase.getAbsolutePath())) {
             if (memberDataBase.createNewFile()) {
