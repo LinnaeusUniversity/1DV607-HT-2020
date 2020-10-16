@@ -7,27 +7,15 @@ import view.IView;
 
 import java.util.List;
 
-/**
- * The type Controller.
- */
 public class Controller {
     private IView view;
     private Registry registry;
 
-    /**
-     * Instantiates a new Controller.
-     *
-     * @param view     the view
-     * @param registry the registry
-     */
     public Controller(IView view, Registry registry) {
         this.view = view;
         this.registry = registry;
     }
 
-    /**
-     * Run.
-     */
     public void run() {
         view.welcomeMessage();
         boolean running = true;
@@ -72,9 +60,6 @@ public class Controller {
         }
     }
 
-    /**
-     * Add member.
-     */
     public void addMember() {
         Member member = view.addMember();
         registry.addMember(member);
@@ -83,14 +68,11 @@ public class Controller {
     private void deleteMember() {
         int memberId = view.deleteMember();
         Member member = registry.retrieveMember(memberId);
-        view.memberDeletedSuccessfully();
         registry.deleteMember(member);
+        view.memberDeletedSuccessfully();
 
     }
 
-    /**
-     * Retrieve member.
-     */
     public void retrieveMember() {
         int memberId = view.retrieveMember();
         try {
@@ -101,25 +83,16 @@ public class Controller {
         }
     }
 
-    /**
-     * Display verbose list.
-     */
     public void displayVerboseList() {
         List<Member> members = registry.getMemberList();
         view.displayVerboseList(members);
     }
 
-    /**
-     * Display compact list.
-     */
     public void displayCompactList() {
         List<Member> members = registry.getMemberList();
         view.displayCompactList(members);
     }
 
-    /**
-     * Edit member.
-     */
     public void editMember() {
         int memberId = view.retrieveMember();
         try {
@@ -130,9 +103,6 @@ public class Controller {
         }
     }
 
-    /**
-     * Add boat.
-     */
     public void addBoat() {
         int memberId = view.retrieveMember();
         try {
@@ -143,9 +113,6 @@ public class Controller {
         }
     }
 
-    /**
-     * Edit boat.
-     */
     public void editBoat() {
         int memberId = view.retrieveMember();
         try {
@@ -159,9 +126,6 @@ public class Controller {
         }
     }
 
-    /**
-     * Delete boat.
-     */
     public void deleteBoat() {
         int memberId = view.retrieveMember();
         try {
@@ -176,17 +140,11 @@ public class Controller {
         }
     }
 
-    /**
-     * Exit.
-     */
     public void exit() {
         registry.saveData();
         view.displayExit();
     }
 
-    /**
-     * Display error.
-     */
     public void displayError() {
         view.displayError("Invalid choice");
     }

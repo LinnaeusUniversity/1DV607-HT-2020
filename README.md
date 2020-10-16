@@ -2,20 +2,35 @@
 ### Work Shop 2 for grade 2
 ### How to clone and run it
 
-1. Click here [Work shop 2 repository](https://github.com/rqkohistani/1DV607-HT-2020)  
-1. Clone the Code as SSH
-1. Create a folder on your pc and name it `example`.
-1. Open it.
-1. Open Git Bash 
-1. git clone git@github.com:rqkohistani/1DV607-HT-2020.git
-1. Open Intellij IDEA
-1. File/Open/`example`
-1. Build the project
-1. Run
-1. The project should run
+1. Click for [Work shop 2 repository](https://github.com/rqkohistani/1DV607-HT-2020)  
+2. Clone the Code as SSH
+3. Create a folder on your pc and name it `example`.
+4. Open it.
+5. Open Git Bash 
+6. git clone git@github.com:rqkohistani/1DV607-HT-2020.git
+7. Open Intellij IDEA
+8. File/Open/`example`
+9. Build the project
+10. Run
+11. The project should run
+-----------------------------------------------------
+### How to run jar files
+#### windows machine
+1. unzip the jar file
+2. open program
+3. It should run
+
+alt:
+    1.Unzip the jar file
+    2. open cmd 
+    3.Change the directory to where the jar is located
+    4.Write this command `java -jar 1DV607-HT-2020.jar`
+    5.It should run the file
+
 
 End of Instruction
-### -----------------------------------------
+
+-----------------------------------------------------
 
 ## Linnéuniversitetet Fakulteten för teknik 1DV607
 ### Objektorienterad analys och design med UML
@@ -27,17 +42,12 @@ End of Instruction
 
  ## Diagrams
  
-    1. Class diagram
-    2. Input Sequence diagram
-    3. Output Sequence diagram
-    4. ReadME Updated
-
-## Source code 
-1. source code
-
-### Jar file
-
-    1. Jar Added
+1. Class diagram
+2. Input Retrieve a member Sequence diagram
+3. Output Delete a member Sequence diagram 
+4. ReadME Updated
+5. Jar file
+6. Source code
 
 
 ### Peer reviews feedback
@@ -49,12 +59,11 @@ End of Instruction
     4. ReadME
     5. runnable jar file
     6. comments in source code
-2. Verbose list and compact list
-    1. Printed only one member
+    7. Verbose list and compact list
+        1. Printed only one member
 
-### Improvements in source code
+### Improvements in source code `MVC`
 
-### MVC
 
 1. model
     1. Registry
@@ -83,7 +92,7 @@ End of Instruction
 8. Classes are now having low coupling
 9. Verbose list prints as the requirements on course press now
 10. Compact list prints as the requirements on course press now
-11. Classes and methods are  renamed short shorter
+11. Classes and methods are  renamed shorter
 
 
 End of document
