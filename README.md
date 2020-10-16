@@ -28,7 +28,9 @@ End of ReadMe
 ## Peer Reviews
 
 ### Document contain:
+
  ## Diagrams
+ 
     1. Class diagram
     2. Input Sequence diagram
     3. Output Sequence diagram
@@ -36,6 +38,7 @@ End of ReadMe
 
 
 ### Jar file
+
     1. Jar Added
 
 
@@ -52,6 +55,7 @@ End of ReadMe
     1. Printed only one member
 
 ### Improvements in source code
+
 ### MVC
 
 1. model
@@ -84,7 +88,7 @@ End of ReadMe
 11. Classes and methods are  renamed short shorter
 
 
-
+End of document
 
 
 Thank you!
